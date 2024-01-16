@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// Create element:
+const head1 = document.createElement("h1");
+head1.innerText = "Demonstrating Headings";
+const sub = document.createElement("h2");
+sub.innerText = "ITCS 5121: Information Visualization (Spring '23)";
+const lab = document.createElement("h3");
+lab.innerText = "Lab 1: Demonstrating Elements of HTML Language";
+const name = document.createElement("h4");
+name.innerText = "Kalpathi Subramanian, Jan 1, 2023";
+const head2 = document.createElement("h1");
+head2.innerText = "Demonstrating Paragraphs";
+const para = document.createElement("p");
+para.innerText = "Here is a paragraph; it uses the <p> tag; paragraphs will start a new line and ignore spaces, linebreaks and number of lines depends on the window size";
+const head3 = document.createElement("h1");
+head3.innerText = "Demonstrating Attributes";
+const attribute1 = document.createElement("p");
+attribute1.innerText = "The 'src' attribute can point to a hyper link such as";
+var a = document.createElement('a'); 
+var link = document.createTextNode("Wikipedia - Info Vis");
+a.appendChild(link); 
+a.title = "Wikipedia - Info Vis";
+a.href = "https://en.wikipedia.org/wiki/Data_and_information_visualization"; 
+const attribute2 = document.createElement("p");
+attribute2.innerText = "or to an image using the 'src' attribute as follows:";
+var x = document.createElement("IMG");
+x.setAttribute("src", "mickey.jpg");
+x.setAttribute("width", "304");
+x.setAttribute("height", "228");
+const head4 = document.createElement("h1");
+head4.innerText = "Demonstrating colored text with a tooltip";
+const tt = document.createElement("p");
+tt.style.color = "green";
+tt.innerText = "This is a green line with a tooltip set using the 'title' attribute and colored using the 'color' attribute";
+const head5 = document.createElement("h1");
+head5.innerText = "Demonstrating Colors,Fonts";
+const font1 = document.createElement("p");
+font1.innerText = "You can set the text or background color using the 'background-color' and 'color' attributes";
+const font2 = document.createElement("p");
+font2.style.backgroundColor = "red";
+font2.innerText = "An example line illustrating background and text colors";
+const head6 = document.createElement("h1");
+head6.innerText = "Demonstrating Lists";
+const list1 = document.createElement("p");
+list1.innerText = "An example of an ordered list:";
+var x1 = document.createElement("OL");
+x1.setAttribute("id", "myOl");
+x1.style.color = "green";
+var y1 = document.createElement("LI");
+var t1 = document.createTextNode("Item 1");
+y1.appendChild(t1);
+var y2 = document.createElement("LI");
+var t2 = document.createTextNode("Item 2");
+y2.appendChild(t2);
+const list2 = document.createElement("p");
+list2.innerText = "An example of an unordered list with bold font at 24px size";
+list2.style.color = "magenta";
+var x2 = document.createElement("UL");
+x2.setAttribute("id", "myUl1");
+x2.style.color = "red";
+var a1 = document.createElement("LI");
+var b1 = document.createTextNode("Item 1");
+a1.appendChild(b1);
+var x3 = document.createElement("UL");
+x3.setAttribute("id", "myUl2");
+x3.style.color = "red";
+var a2 = document.createElement("LI");
+var b2 = document.createTextNode("Item 2");
+a2.appendChild(b2);
+
+
+// Append to body:
+document.body.appendChild(head1);
+document.body.appendChild(sub);
+document.body.appendChild(lab);
+document.body.appendChild(name);
+document.body.appendChild(head2);
+document.body.appendChild(para);
+document.body.appendChild(head3);
+document.body.appendChild(attribute1);
+document.body.appendChild(a);
+document.body.appendChild(attribute2);
+document.body.appendChild(x);
+document.body.appendChild(head4);
+document.body.appendChild(tt);
+document.body.appendChild(head5);
+document.body.appendChild(font1);
+document.body.appendChild(font2);
+document.body.appendChild(head6);
+document.body.appendChild(list1);
+document.body.appendChild(x1);
+document.getElementById("myOl").appendChild(y1);
+document.getElementById("myOl").appendChild(y2);
+document.body.appendChild(list2);
+document.body.appendChild(x2);
+document.getElementById("myUl1").appendChild(a1);
+document.body.appendChild(x3);
+document.getElementById("myUl2").style.fontSize = "24px";
+document.getElementById("myUl2").appendChild(a2);
+</script>
+
+</body>
+</html>
+
